@@ -32,7 +32,7 @@ class Home extends Component {
         />
         <TouchableHighlight onPress={() => this.setModalVisible(true)}>
           <View style={styles.inlineView}>
-            <Text style={styles.text}>Open Daummap</Text>
+            <Text style={styles.text}>Open GoogleMap</Text>
           </View>
         </TouchableHighlight>
       </View>

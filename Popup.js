@@ -8,6 +8,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import {WebView} from 'react-native-webview';
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 
 const Popup = props => {
   // onWebviewMessage = e => {
@@ -18,10 +19,20 @@ const Popup = props => {
     <Modal animationType="slide" transparent={true} visible={props.visible}>
       <View style={styles.modalBackground}>
         <View style={styles.modal}>
-          <WebView
+          {/* <WebView
             source={{uri: 'https://webviewproject-373ef.web.app/'}}
             onMessage={this.onWebviewMessage}
             javascriptEnabled={true}
+          /> */}
+          <MapView
+            provider={PROVIDER_GOOGLE}
+            initialRegion={{
+              latitude: 37.78825,
+              longitude: -122.4324,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }}
+            style={{flex: 1}}
           />
           <TouchableHighlight onPress={() => props.setModalVisible(false)}>
             <View style={styles.inlineView}>
