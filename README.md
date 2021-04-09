@@ -8,13 +8,13 @@ react-native-daummap 라이브러리 연동 후 사용방법을 시도 해본 �
 Invariant Violation: requireNativeComponent: "DaumMap" was not found in the UIManager.
 
 This error is located at:
-    in DaumMap (at react-native-daummap/index.js:55)
-    in DaumMapView (at App.js:9)
-    in RCTView (at View.js:34)
-    in View (at App.js:8)
-    in App
-    in RCTView (at View.js:34)
-    in View (at AppContainer.js:107)
-    in RCTView (at View.js:34)
-    in View (at AppContainer.js:134)
-    in AppContainer (at renderApplication.js:40)
+in DaumMap (at react-native-daummap/index.js:55)
+in DaumMapView (at App.js:9)
+in RCTView (at View.js:34)
+in View (at App.js:8)
+in App
+in RCTView (at View.js:34)
+in View (at AppContainer.js:107)
+in RCTView (at View.js:34)
+in View (at AppContainer.js:134)
+in AppContainer (at renderApplication.js:40)
