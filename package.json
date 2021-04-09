@@ -12,7 +12,6 @@
   "dependencies": {
     "react": "17.0.1",
     "react-native": "0.64.0",
-    "react-native-daummap": "^0.2.8",
     "react-native-map-link": "^2.7.25",
     "react-native-webview": "^11.3.2"
   },
