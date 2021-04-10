@@ -132,7 +132,7 @@ android {
 
     defaultConfig {
         applicationId "com.usingdaummap"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -195,6 +195,13 @@ dependencies {
     }
     implementation 'com.google.android.gms:play-services-base:17.2.1'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    // Kakao
+    implementation 'com.kakao.sdk:v2-user:2.4.2' // Kakao login
+    implementation 'com.kakao.sdk:v2-talk:2.4.2' // Kakaotalk
+    implementation 'com.kakao.sdk:v2-story:2.4.2' // Kakaostory
+    implementation 'com.kakao.sdk:v2-link:2.4.2' // message(kakaolink)
+    implementation 'com.kakao.sdk:v2-navi:2.4.2' // Kakao navi
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'

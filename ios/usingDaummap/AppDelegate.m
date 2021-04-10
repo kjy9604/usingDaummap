@@ -12,6 +12,8 @@
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
 
+#import <ARNKakaoLogin/ARNKakaoLoginConnector.h>
+
 #import <GoogleMaps/GoogleMaps.h>
 
 static void InitializeFlipper(UIApplication *application) {
@@ -62,4 +64,13 @@ static void InitializeFlipper(UIApplication *application) {
 #endif
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+                                       sourceApplication:(NSString *)sourceApplication
+                                              annotation:(id)annotation {
+    if([ARNKakaoLoginConnector isKakaoTalkLoginUrl:url]) {
+      return [ARNKakaoLoginConnector handleOpenUrl: url];
+    }
+
+    return NO;
+}
 @end

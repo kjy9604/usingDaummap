@@ -2,29 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>LSApplicationQueriesSchemes</key>
-  <array>
-      <string>comgooglemaps</string>
-      <string>citymapper</string>
-      <string>uber</string>
-      <string>lyft</string>
-      <string>transit</string>
-      <string>truckmap</string>
-      <string>waze</string>
-      <string>yandexnavi</string>
-      <string>moovit</string>
-      <string>yandextaxi</string>
-      <string>yandexmaps</string>
-      <string>kakaomap</string>
-      <string>szn-mapy</string>
-      <string>mapsme</string>
-      <string>osmandmaps</string>
-      <string>gett</string>
-      <string>nmap</string>
-      <string>dgis</string>
-  </array>
-	<key>KAKAO_APP_KEY</key>
-	<string>bbd7a0891d28ca28bbf97dce160e61f7</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -43,8 +20,44 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>kakao login</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kakaobbd7a0891d28ca28bbf97dce160e61f7</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>bbd7a0891d28ca28bbf97dce160e61f7</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+		<string>citymapper</string>
+		<string>uber</string>
+		<string>lyft</string>
+		<string>transit</string>
+		<string>truckmap</string>
+		<string>waze</string>
+		<string>yandexnavi</string>
+		<string>moovit</string>
+		<string>yandextaxi</string>
+		<string>yandexmaps</string>
+		<string>kakaomap</string>
+		<string>szn-mapy</string>
+		<string>mapsme</string>
+		<string>osmandmaps</string>
+		<string>gett</string>
+		<string>nmap</string>
+		<string>dgis</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

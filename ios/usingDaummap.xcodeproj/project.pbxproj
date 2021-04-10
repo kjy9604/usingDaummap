@@ -14,6 +14,7 @@
 		28C53623BAB729B1781400E8 /* libPods-usingDaummap-usingDaummapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E82DB1255F9F04A8AC4DAFB /* libPods-usingDaummap-usingDaummapTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D943F044D7177B3A7BECE2B5 /* libPods-usingDaummap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FA049BCD4915E6C4A1CFE2 /* libPods-usingDaummap.a */; };
+		F198E257262209C6004B90C5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F198E256262209C6004B90C5 /* File.swift */; };
 		F1D2A295261F0BF2009F096C /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = F1D2A294261F0BF1009F096C /* DaumMap.embeddedframework */; };
 		F1D2A299261F0BFC009F096C /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D2A298261F0BFC009F096C /* DaumMap.framework */; };
 		F1D2A29E261F0C17009F096C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D2A29D261F0C17009F096C /* OpenGLES.framework */; };
@@ -53,6 +54,8 @@
 		92180A942F3C9D15C4E695F8 /* Pods-usingDaummap-usingDaummapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usingDaummap-usingDaummapTests.release.xcconfig"; path = "Target Support Files/Pods-usingDaummap-usingDaummapTests/Pods-usingDaummap-usingDaummapTests.release.xcconfig"; sourceTree = "<group>"; };
 		B67A55C0044F2D1B3D534C71 /* Pods-usingDaummap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usingDaummap.release.xcconfig"; path = "Target Support Files/Pods-usingDaummap/Pods-usingDaummap.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F198E255262209C6004B90C5 /* usingDaummap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "usingDaummap-Bridging-Header.h"; sourceTree = "<group>"; };
+		F198E256262209C6004B90C5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F1D2A294261F0BF1009F096C /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 		F1D2A298261F0BFC009F096C /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
 		F1D2A29D261F0C17009F096C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F198E256262209C6004B90C5 /* File.swift */,
+				F198E255262209C6004B90C5 /* usingDaummap-Bridging-Header.h */,
 			);
 			name = usingDaummap;
 			sourceTree = "<group>";
@@ -242,7 +247,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -447,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				F198E257262209C6004B90C5 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21B07D1E3B5FAFB70C737081 /* Pods-usingDaummap-usingDaummapTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -493,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92180A942F3C9D15C4E695F8 /* Pods-usingDaummap-usingDaummapTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = usingDaummapTests/Info.plist;
@@ -538,6 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = usingDaummap;
+				SWIFT_OBJC_BRIDGING_HEADER = "usingDaummap-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -568,6 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = usingDaummap;
+				SWIFT_OBJC_BRIDGING_HEADER = "usingDaummap-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
